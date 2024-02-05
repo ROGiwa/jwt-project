@@ -18,7 +18,7 @@ const login = (req, res) => {
 const dashboard = (req, res) => {
   const rand = Math.floor(Math.random() * 100);
   res.status(200).json({
-    msg: `Hello, ${decoded.username}`,
+    msg: `Hello, ${req.user.username}`,
     secret: `the number is your number ${rand}`,
   });
 };
