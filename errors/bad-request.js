@@ -1,7 +1,7 @@
-class CustomAPIError extends Error {
+const CustomAPIError = require('./custom-error');
+class BadRequest extends Error {
   constructor(message) {
     super(message);
-    s;
   }
 }
 
